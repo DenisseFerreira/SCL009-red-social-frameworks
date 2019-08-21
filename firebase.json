@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/Red-Social",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
