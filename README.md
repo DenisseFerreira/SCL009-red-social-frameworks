@@ -1,27 +1,92 @@
-# RedSocial
+# ketrawe 
+Su significado es tierra cultivable, esta aplicación busca ser una constribución en el respeto y el amor por la tierra y su poder, llamando a la colectividad y el conocimiento  desde lo que hoy llamamos huertas; huerta como un modo de autonomia alimentaria y de conección.
+ketrawue es una red social de seres humanos que cultivan de distintas maneras, donde podran exponer dudas y también aprendizajes de su experiencia, junto con esto compartir actividades, compartir semillas y alimentos. tendran un espacio donde se podran contactar y encontrar con huertas comunitarias de su sector  y asi  apoyar en su crecimiento.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+### Historias de usuario
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. COMO amante de las plantas QUIERO crear una cuenta en la página PARA poder ingresar a la comunidad de forma segura
+Criterios de aceptación.
+    • Permitir al usuario registrarse con su nombre, correo y contraseña.
+    • Generar mensaje de error si olvida rellenar algún campo.
+    • Generar mensaje de error si el correo es inválido.
+    • Generar mensaje de error cuando ingrese una contraseña menor a 6 caracteres.
+    • Cuando el usuario crea la cuenta, debe recibir un correo de verificación.
 
-## Code scaffolding
+2. COMO usuario registrado en el formulario QUIERO ingresar a la página PARA navegar por ella.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Criterios de aceptación.
+    • Campo para ingresar correo
+    • Campo para ingresar contraseña.
+-Generar un mensaje de alerta cuando el usuario no ingrese uno de los campos requeridos.
+-Generar un mensaje de alerta cuando el usuario ingrese un campo incorrecto o no valido 
+    • Botón “comenzar” para iniciar.
+    • Poder visualizar la página.
+    • Poder ver mi imagen de perfil.
+    • Poder cerrar sesión .
+    
+3. COMO amante de las plantas QUIERO iniciar sesión con google PARA poder ingresar a la comunidad de forma segura
 
-## Build
+Criterios de aceptación :
+   - Permitir al usuario ingresar con su cuenta de google
+   - Permitir que el usuario ingrese una contraseña si es que aun no ha iniciado sesión en google.
+   - Poder visualizar la página.
+   -  Poder ver mi imagen de perfil
+   -  Poder comentar y escribir en la pagina.
+   - Poder cerrar sesión ...con el boton…..
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Definición de terminado:
+- Debe ser una SPA.
+- Debe ser responsive.
+- Debes haber recibido code review de al menos una compañera de otro equipo.
+- Haces test unitarios y, además, has testeado tu producto manualmente.
+- Hiciste pruebas de usabilidad e incorporaste el feedback del usuario.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. COMO usuario amante de las plantas QUIERO publicar en el muro PARA poder resolver mis dudas o compartir experiencias
 
-## Running end-to-end tests
+Criterios de aceptación :
+    • Permitir al usuario registrado escribir en el muro
+-Poder ver su foto de perfil al lado del comentario que quiero escribir.
+      (testear las dos opciones, con registro y sin registro)
+-Poder ver junto a los comentarios del muro , los nombres de los usuarios que escribieron 
+    • Tener botón “comentar”.
+    • Luego de comentar poder visualizar su mensaje en el muro.
+    • Poder visualizar los comentarios de los otros usuarios.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+5. COMO usuario amante de las plantas QUIERO Editar y eliminar mis publicaciones PARA corregir lo escrito.
+Criterios de aceptación :
+-Poder eliminar un post especifico. Con un botón "eliminar"
+-Pedir confirmación antes de eliminar un post.
+-Permitir al usuario editar el post que haya colocado en el muro con un botón "editar"
+    • Generar mensaje de alerta para usuario que intente escribir y no este registrado
+    • Tener botón “comentar”
+    • Luego de comentar poder visualizar su mensaje en el muro.
+    • Poder visualizar los comentarios de los otros usuarios.
 
-## Further help
+6. Como usuario Quiero dar, quitar y contar like a las diferentes publicaciones que están escritas en el muro PARA confirmar que algo me gustó, ver otras y llevar un conteo.
+Criterios de aceptación :
+-Poder visualizar icono de like en cada publicación para poder pinchar sobre este.
+-Poder dar like a las diferentes publicaciones.
+-Poder quitar like a las diferentes publicaciones.
+- Llevar un conteo de los likes.
+-Poder visualizar cual fue el usuario que le dio like a una publicación. (HE)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+7. Como usuario QUIERO moverme dentro del menú PARA ver diferentes secciones de la pagina.
+
+- Menú visible en la parte superior de forma horizontal.
+- Menú con acceso a cada sección.
+
+8. Como usuario de la aplicación QUIERO poder visualizar los lugares donde puedo encontrar huertas comunitarias
+Criterios de aceptación :
+-Poder ingresar a la sección de huertas comunitarias .
+-Poder elegir entre las opciones de lugares dentro de la región metropolitana y escoger la opción que más le acomode .
+-Poder visualizar el resultado de la selección del lugar donde quiere ver donde existen huertas comunitarias . (guardar en json)
+
+9. COMO usuario registrado QUIERO Comentar otras publicaciones PARA poder interactuar con otros usuarios.
+
+Criterios de aceptación :
+- Poder visualizar las publicaciones de los usuarios.
+- Espacio para introducir el comentario
+-Contar con botón “comentar”
+-Visualizar comentario escrito. 
